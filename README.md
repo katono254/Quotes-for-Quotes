@@ -2,7 +2,8 @@
 #### {This application helps users create quotes and also view the former}, {30/11/2019}
 #### By **{Greg Katono}**
 ## Description
-{ }
+{Quote for Quote is an application where it lets the user create quotes,view quotes and 
+and have those quotes upvoted or downvoted.}
 ## Setup/Installation Requirements
 * This is a great place
 * to list setup instructions
