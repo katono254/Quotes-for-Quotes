@@ -7,7 +7,16 @@ import {Quote} from '../quote';   /**importing quote blueprint class */
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  
+  Quotes=[
+    new Quote()
+
+    
+
+
+
+
+
+  ]
  
   constructor() { }
 
