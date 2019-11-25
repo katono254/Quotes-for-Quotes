@@ -1,0 +1,12 @@
+h1{
+    text-transform: uppercase;  
+    text-align: center;
+    font-size: 61px;
+    font-weight:bold;
+}
+h3{
+    text-transform: uppercase;  
+    text-align: center;
+    font-size: 22px;
+    font-weight: inherit;
+}
