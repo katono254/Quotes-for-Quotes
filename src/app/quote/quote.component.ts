@@ -8,7 +8,7 @@ import {Quote} from '../quote';   /**importing quote blueprint class */
 })
 export class QuoteComponent implements OnInit {
   Quotes=[
-    new Quote()
+    
 
     
 
