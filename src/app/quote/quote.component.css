@@ -4,6 +4,7 @@ h1{
     font-size: 61px;
     font-weight:bold;
     font-family: 'Gloria Hallelujah', cursive;
+    color: green
     
 }
 h3{
@@ -12,5 +13,6 @@ h3{
     font-size: 22px;
     font-weight: inherit;
     font-family: 'Gloria Hallelujah', cursive;
+    
     
 }
