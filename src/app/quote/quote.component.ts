@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Quote} from '../quote';   /**importing quote blueprint class */
+import {Quote} from '../quote';     
 
 
 @Component({
@@ -13,7 +13,6 @@ export class QuoteComponent implements OnInit {
   submitType:string='Save'
   quotes: any;
   onNew() {
-  
     this.quotemodel = new Quote("", "", "", new Date(), 0, 0);
     this.submitType = 'Save';
     this.showNew = true;
@@ -24,6 +23,23 @@ export class QuoteComponent implements OnInit {
     }
     this.showNew = false;
   }
+    onCancel() {      
+  
+    this.showNew = false;
+    }
+    quote:Quote[]=[
+      new Quote{'The 50-50-90 rule is a 50-50 chance of getting it right and a 90% probability you will get it wrong'}
+      new Quote{'One of the most productive days was throwing away 1000 lines of code'}
+      new Quote{'There are 10 types of people in this world, those who understand binary and those who dont'}
+      new Quote{'Code never lies, comments do'}
+      new Quote{'One man’s crappy software is another man’s full time job.'}
+      new Quote{'One man’s constant is another man’s variable.'}
+      new Quote{'Your limitation is only your imagination.'}
+      new Quote{'Push yourself, because no one else is going to do it for you.'}
+
+
+    ]
+    
     
   
 
