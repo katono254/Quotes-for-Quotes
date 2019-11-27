@@ -22,7 +22,7 @@ export class QuoteComponent implements OnInit {
     if (this.submitType === 'Save') {
       this.quotes.push(this.quotemodel);
     }
-    this.showNew = false;
+    this.showNew = false; 
   }
     onCancel() {      
   

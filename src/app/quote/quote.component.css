@@ -12,7 +12,11 @@ h3{
     text-align: center;
     font-size: 22px;
     font-weight: inherit;
-    font-family: 'Gloria Hallelujah', cursive;
-    
-    
+    font-family: 'Gloria Hallelujah', cursive;    
 }
+.form-btn{
+    margin-left: auto;
+    margin-right:auto;
+}
+
+
