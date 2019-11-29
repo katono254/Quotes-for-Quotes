@@ -14,30 +14,53 @@
       </form>
       </div>
       </div>
+    <div *ngIf= "!showNew">
+        <label for="text-input">Quote</label>
+        <textarea class="form-control" [(ngModel)]="quoteModel.text" placeholder="Write your quote here" rows="6" name="text" id="text-input" required></textarea>
+      </div>
+        <br>
+        <br>
+        
+        
+      <div *ngIf="!showNew">
+        <label for="author-input">Author</label>
+        <input class="form-control" type="text" [(ngModel)]="quoteModel.author" name="author" id="author-input" placeholder="Quote Author" required>
+
+      </div>
+      <div *ngIf="!showNew">
+          <label for="poster-input">Poster</label>
+          <input id="poster-input" class="form-control" type="text" [(ngModel)]="quoteModel.poster" name="poster" placeholder="Your name" required>
+          </div>
+          <div *ngIf="!showNew">
+          <button type="submit" class="btn btn-primary">{{submitType}}</button>
+          </div>  
       <div class="container">
         <div class="row">
-          <div class="card-columns">
-            <div class="card"*ngFor='let quote of quotes;let i = index'>
+            <div class="card"*ngFor='let quote of quote;let i = index'>
               <div class="card-body">
                 <i class="fa fa-quote-left"></i>
                 <p appHighlight >{{quote.text}} </p>
                 <p>{{quote.author}}</p>
                 </div>
-                  <div class="card-footer">
-                    
-
-
-
-
-
-                  </div>
-                
-
+        </div>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-3 action">
+                {{quote.upvotes}}
             </div>
+            <div class="col-3 action" (click)="quote.upvotes = quote.upvotes + 1">
+                <i class="fa fa-thumbs-up"></i>
+              </div>
+              <div class="col-3 action" (click)="quote.downvotes = quote.downvotes + 1">
+                <i class="fa fa-thumbs-down"></i>
+              </div>
+              <div class="col-3 action">
+                {{quote.downvotes}}
+              </div>
           </div>
         </div>
-      </div>
-      
+                 
 
       
 

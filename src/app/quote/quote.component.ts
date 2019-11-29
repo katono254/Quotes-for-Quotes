@@ -10,13 +10,13 @@ import {Quote} from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotemodel:Quote;
-  showNew:Boolean=false
+  showNew:Boolean=true;
   submitType:string='Save'
   quotes: any;
   onNew() {
-    this.quotemodel = new Quote("", "", "", new Date(), 0, 0);
+    
     this.submitType = 'Save';
-    this.showNew = true;
+    this.showNew = false;
   }
   onSave() {
     if (this.submitType === 'Save') {
@@ -29,7 +29,7 @@ export class QuoteComponent implements OnInit {
     this.showNew = false;
     }
     
-    quote:Quote[]=[
+    quote=[
       new Quote('The 50-50-90 rule is a 50-50 chance of getting it right and a 90% probability you will get it wrong', 'Boyd','Admin', new Date(2019,3,6,4 ),0,0),
       new Quote('One of the most productive days was throwing away 1000 lines of code','Cynthia', 'Admin' ,new Date(2019,6,4,3),0,0),
       new Quote('There are 10 types of people in this world, those who understand binary and those who dont','Andrew', 'Admin', new Date(2019,6,4,3),0,0),

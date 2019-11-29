@@ -10,7 +10,7 @@ import{DateCountPipe} from '../date-count.pipe';
   styleUrls: ['./quote-detail.component.css']
 })
 export class QuoteDetailComponent implements OnInit {
-  @Input() quote: Quote;
+  @Input() Quote: Quote;
   constructor() { }
 
   ngOnInit() {

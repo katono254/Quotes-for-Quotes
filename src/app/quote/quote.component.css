@@ -18,5 +18,37 @@ h3{
     margin-left: auto;
     margin-right:auto;
 }
-
-
+.author {
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+  }
+  .card{
+    margin: 25px;
+  }
+  .card-body{
+      text-align: center;
+      
+  }
+  
+.card:nth-child(6n-5) {
+    background-color: #0088ff;
+  }
+  .card:nth-child(6n-4) {
+    background-color: #ffaa00;
+  }
+  .card:nth-child(6n-3) {
+    background-color: #ff7700;
+  }
+  .card:nth-child(6n-2) {
+    background-color: #ff0033;
+  }
+  .card:nth-child(6n-1) {
+    background-color: #9911aa;
+  }
+  .card:nth-child(6n+0) {
+    background-color: #5ebd3e;
+  }
+  .card-footer{
+    background-color: #eeeeee;
+  }
